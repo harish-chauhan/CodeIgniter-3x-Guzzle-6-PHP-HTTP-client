@@ -12,9 +12,9 @@ Here is the link for official Guzzle Documentation:: http://docs.guzzlephp.org/e
 
 ```
 
-Or Please follow the following steps to install it
+###Or Please follow the following steps to install it
 
-Clone or Download the Guzzle from the git repository
+###Clone or Download the Guzzle from the git repository
 
 ```bash
 # Install guzzle files in application/libraries folder
@@ -31,7 +31,7 @@ Guzzel_PHP_HTTP.php
 Guzzel_PHP_HTTP_vendor
 
 ```
-Now Guzzel_PHP_HTTP_vendor and Guzzel_PHP_HTTP.php files successfully installed in the CodeIgniter 3.x applications/libraries folder
+###Now Guzzel_PHP_HTTP_vendor and Guzzel_PHP_HTTP.php files successfully installed in the CodeIgniter 3.x applications/libraries folder
 
 ## Now load the libraries inside your controllers function as::
 
@@ -75,7 +75,7 @@ Now Guzzel_PHP_HTTP_vendor and Guzzel_PHP_HTTP.php files successfully installed 
 
 ```
 
-Or you can also try the following code to access guzzle 6.0
+##Or you can also try the following code to access guzzle 6.0
 
 ```bash
   #guzzle library add to use guzzle
