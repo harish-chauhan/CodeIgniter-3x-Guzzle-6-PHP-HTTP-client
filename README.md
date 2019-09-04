@@ -23,7 +23,7 @@ git clone https://github.com/harish-chauhan/CodeIgniter-3x-Guzzle-6-PHP-HTTP-cli
 
 ```
 
-# Place the file and folder inside the application/libraries folder
+##  Place the file and folder inside the application/libraries folder
 
 ```bash
 
@@ -33,7 +33,7 @@ Guzzel_PHP_HTTP_vendor
 ```
 Now Guzzel_PHP_HTTP_vendor and Guzzel_PHP_HTTP.php files successfully installed in the CodeIgniter 3.x applications/libraries folder
 
-#To
+## Now load the libraries inside your controllers function as::
 
 ```bash
 	
@@ -42,14 +42,18 @@ Now Guzzel_PHP_HTTP_vendor and Guzzel_PHP_HTTP.php files successfully installed 
 	$client = new \GuzzleHttp\Client();
 
 	// Set various headers on a request
-	$response = $client->request('POST', 'https://api-prod.corelogic.com/trestle/oidc/connect/token', [
+	$response = $client->request(
+		'POST', 
+		'https://api-prod.corelogic.com/trestle/oidc/connect/token', 
+		[
 	    'form_params' => [
-	        'grant_type' => 'client_credentials',
-	        'scope' => 'api',
-	        'client_id' => 'trestle_ZogoloIncBETACRM20190827120101',
-	        'client_secret' => '0aaa74545e92450fbb86e83d382354f0',
-	    ]
-	]);
+		        'grant_type' => 'client_credentials',
+		        'scope' => 'api',
+		        'client_id' => 'trestle_ZogoloIncBETACRM20190827120101',
+		        'client_secret' => '0aaa74545e92450fbb86e83d382354f0',
+	    	]
+		]
+	);
 
 	$response_status = $response->getStatusCode(); # 200
 
